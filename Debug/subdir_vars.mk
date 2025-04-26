@@ -15,7 +15,10 @@ C:/Users/domin/OneDrive/Documents/1\ -\ School/Texas/24-25/S25/ECE\ 319H/MSPM0_V
 C:/Users/domin/OneDrive/Documents/1\ -\ School/Texas/24-25/S25/ECE\ 319H/MSPM0_ValvanoWare/inc/ST7735.cpp \
 C:/Users/domin/OneDrive/Documents/1\ -\ School/Texas/24-25/S25/ECE\ 319H/MSPM0_ValvanoWare/inc/SlidePot.cpp \
 ../SmallFont.cpp \
+<<<<<<< HEAD
 ../SnakeGame.cpp \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 ../Sound.cpp \
 ../Switch.cpp \
 C:/Users/domin/OneDrive/Documents/1\ -\ School/Texas/24-25/S25/ECE\ 319H/MSPM0_ValvanoWare/inc/TExaS.cpp \
@@ -34,7 +37,10 @@ OBJS += \
 ./ST7735.o \
 ./SlidePot.o \
 ./SmallFont.o \
+<<<<<<< HEAD
 ./SnakeGame.o \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 ./Sound.o \
 ./Switch.o \
 ./TExaS.o \
@@ -50,7 +56,10 @@ CPP_DEPS += \
 ./ST7735.d \
 ./SlidePot.d \
 ./SmallFont.d \
+<<<<<<< HEAD
 ./SnakeGame.d \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 ./Sound.d \
 ./Switch.d \
 ./TExaS.d \
@@ -66,7 +75,10 @@ OBJS__QUOTED += \
 "ST7735.o" \
 "SlidePot.o" \
 "SmallFont.o" \
+<<<<<<< HEAD
 "SnakeGame.o" \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 "Sound.o" \
 "Switch.o" \
 "TExaS.o" \
@@ -82,7 +94,10 @@ CPP_DEPS__QUOTED += \
 "ST7735.d" \
 "SlidePot.d" \
 "SmallFont.d" \
+<<<<<<< HEAD
 "SnakeGame.d" \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 "Sound.d" \
 "Switch.d" \
 "TExaS.d" \
@@ -98,7 +113,10 @@ CPP_SRCS__QUOTED += \
 "C:/Users/domin/OneDrive/Documents/1 - School/Texas/24-25/S25/ECE 319H/MSPM0_ValvanoWare/inc/ST7735.cpp" \
 "C:/Users/domin/OneDrive/Documents/1 - School/Texas/24-25/S25/ECE 319H/MSPM0_ValvanoWare/inc/SlidePot.cpp" \
 "../SmallFont.cpp" \
+<<<<<<< HEAD
 "../SnakeGame.cpp" \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 "../Sound.cpp" \
 "../Switch.cpp" \
 "C:/Users/domin/OneDrive/Documents/1 - School/Texas/24-25/S25/ECE 319H/MSPM0_ValvanoWare/inc/TExaS.cpp" \

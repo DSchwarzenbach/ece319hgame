@@ -81,7 +81,11 @@ void Sound_Start(const uint8_t *pt, uint32_t count){
 
 void Sound_Shoot(void){
 // write this
+<<<<<<< HEAD
   Sound_Start(metal_crunch, 3525);
+=======
+  Sound_Start(explosion, 2000);
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 }
 void Sound_Killed(void){
 // write this
@@ -97,14 +101,25 @@ void Sound_Fastinvader1(void){
 
 }
 void Sound_Fastinvader2(void){
+<<<<<<< HEAD
   Sound_Start(highpitch, 1802);
+=======
+
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 }
 void Sound_Fastinvader3(void){
 
 }
 void Sound_Fastinvader4(void){
+<<<<<<< HEAD
   Sound_Start(slimeball, 7570);
 }
 void Sound_Highpitch(void){
   Sound_Start(invaderkilled, 3377);
+=======
+
+}
+void Sound_Highpitch(void){
+
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 }

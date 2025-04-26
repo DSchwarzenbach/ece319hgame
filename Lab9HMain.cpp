@@ -19,6 +19,7 @@
 #include "Switch.h"
 #include "Sound.h"
 #include "images/images.h"
+<<<<<<< HEAD
 #include "SnakeGame.h"
 typedef enum { STATE_START, STATE_PLAY, STATE_END } GameState_t;
 static GameState_t gameState = STATE_START;
@@ -33,17 +34,25 @@ static GameLang_t gameLang = LANG_EN;
 
 // semaphore for 30 Hz tick
 static volatile bool TickFlag = false;
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 
 #define LED1 (1 << 12)
 #define LED2 (1 << 16)
 #define LED3 (1 << 17)
 #define LED4 (1 << 19)
+<<<<<<< HEAD
 int Speed_Setting = 10;
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 
 extern "C" void __disable_irq(void);
 extern "C" void __enable_irq(void);
 extern "C" void TIMG12_IRQHandler(void);
+<<<<<<< HEAD
 extern bool Snake_IsStarted(void);
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 
 
 // ****note to ECE319K students****
@@ -67,6 +76,7 @@ uint32_t Random(uint32_t n){
 SlidePot Sensor(1749,122); // copy calibration from Lab 7
 
 // games  engine runs at 30Hz
+<<<<<<< HEAD
 void TIMG12_IRQHandler(void){
   if((TIMG12->CPU_INT.IIDX) == 1){      // acknowledge interrupt
     // read switches exactly once
@@ -100,6 +110,22 @@ void TIMG12_IRQHandler(void){
 }
 
 
+=======
+void TIMG12_IRQHandler(void){uint32_t pos,msg;
+  if((TIMG12->CPU_INT.IIDX) == 1){ // this will acknowledge
+    GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
+    GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
+// game engine goes here
+    // 1) sample slide pot
+    // 2) read input switches
+    // 3) move sprites
+    // 4) start sounds
+    // 5) set semaphore
+    // NO LCD OUTPUT IN INTERRUPT SERVICE ROUTINES
+    GPIOB->DOUTTGL31_0 = GREEN; // toggle PB27 (minimally intrusive debugging)
+  }
+}
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 uint8_t TExaS_LaunchPadLogicPB27PB26(void){
   return (0x80|((GPIOB->DOUT31_0>>26)&0x03));
 }
@@ -198,7 +224,11 @@ int main2(void){ // main2
 
 
 // use main3 to test switches and LEDs
+<<<<<<< HEAD
 int main3(void){ // main3
+=======
+int main(void){ // main3
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
   __disable_irq();
   PLL_Init(); // set bus speed
   LaunchPad_Init();
@@ -248,6 +278,7 @@ int main4(void){ uint32_t last=0,now;
   }
 }
 // ALL ST7735 OUTPUT MUST OCCUR IN MAIN
+<<<<<<< HEAD
 int main(void){ // final main
   __disable_irq();
   PLL_Init();               // set bus speed
@@ -388,3 +419,30 @@ START:
 bool Snake_IsStarted(void) {
   return gameStarted;
 }
+=======
+int main5(void){ // final main
+  __disable_irq();
+  PLL_Init(); // set bus speed
+  LaunchPad_Init();
+  ST7735_InitPrintf();
+    //note: if you colors are weird, see different options for
+    // ST7735_InitR(INITR_REDTAB); inside ST7735_InitPrintf()
+  ST7735_FillScreen(ST7735_BLACK);
+  Sensor.Init(); // PB18 = ADC1 channel 5, slidepot
+  Switch_Init(); // initialize switches
+  LED_Init();    // initialize LED
+  Sound_Init();  // initialize sound
+  TExaS_Init(0,0,&TExaS_LaunchPadLogicPB27PB26); // PB27 and PB26
+    // initialize interrupts on TimerG12 at 30 Hz
+  
+  // initialize all data structures
+  __enable_irq();
+
+  while(1){
+    // wait for semaphore
+       // clear semaphore
+       // update ST7735R
+    // check for end game or level switch
+  }
+}
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8

@@ -7,7 +7,10 @@
 "./ST7735.o"
 "./SlidePot.o"
 "./SmallFont.o"
+<<<<<<< HEAD
 "./SnakeGame.o"
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 "./Sound.o"
 "./Switch.o"
 "./TExaS.o"

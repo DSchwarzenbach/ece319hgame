@@ -19,7 +19,10 @@ ORDERED_OBJS += \
 "./ST7735.o" \
 "./SlidePot.o" \
 "./SmallFont.o" \
+<<<<<<< HEAD
 "./SnakeGame.o" \
+=======
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 "./Sound.o" \
 "./Switch.o" \
 "./TExaS.o" \
@@ -163,9 +166,15 @@ ECE319K_Lab9H.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
+<<<<<<< HEAD
 	-$(RM) "Clock.o" "DAC5.o" "LED.o" "Lab9HMain.o" "LaunchPad.o" "SPI.o" "ST7735.o" "SlidePot.o" "SmallFont.o" "SnakeGame.o" "Sound.o" "Switch.o" "TExaS.o" "Timer.o" "images\pipedreams\PipeSound.o" "ticlang\startup_mspm0g3507_ticlang.o" 
 	-$(RM) "images\pipedreams\PipeSound.d" "ticlang\startup_mspm0g3507_ticlang.d" 
 	-$(RM) "Clock.d" "DAC5.d" "LED.d" "Lab9HMain.d" "LaunchPad.d" "SPI.d" "ST7735.d" "SlidePot.d" "SmallFont.d" "SnakeGame.d" "Sound.d" "Switch.d" "TExaS.d" "Timer.d" 
+=======
+	-$(RM) "Clock.o" "DAC5.o" "LED.o" "Lab9HMain.o" "LaunchPad.o" "SPI.o" "ST7735.o" "SlidePot.o" "SmallFont.o" "Sound.o" "Switch.o" "TExaS.o" "Timer.o" "images\pipedreams\PipeSound.o" "ticlang\startup_mspm0g3507_ticlang.o" 
+	-$(RM) "images\pipedreams\PipeSound.d" "ticlang\startup_mspm0g3507_ticlang.d" 
+	-$(RM) "Clock.d" "DAC5.d" "LED.d" "Lab9HMain.d" "LaunchPad.d" "SPI.d" "ST7735.d" "SlidePot.d" "SmallFont.d" "Sound.d" "Switch.d" "TExaS.d" "Timer.d" 
+>>>>>>> 960619b7ae24a60651a8019ce3176a859b502cd8
 	-@echo 'Finished clean'
 	-@echo ' '
 
